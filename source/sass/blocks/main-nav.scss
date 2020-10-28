@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+    .main-nav__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+    }
+    .main-nav__item {
+      display: block;
+      width: 100%;
+      text-align: center;
+      &:nth-child(2) {
+        margin-right: 156px;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      padding: 14px 0;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      &:hover {
+        color: $theme-blue;
+      }
+      &:active {
+        color: $theme-grey;
+      }
+    }
+}

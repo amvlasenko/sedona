@@ -2,11 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Оставьте свой отзыв</title>
   </head>
   <body class="page-body">
     <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
       <a href="" class="page-header__logo">
         <img
           src="img/logotype-mobile.svg"
@@ -15,27 +26,20 @@
           alt="Город Седона"
         />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Sedona</h1>
-      <h2 class="page-main__header">Оставьте свой отзыв</h2>
-      <p class="page-main__description">
-        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
-        посещенных вами достопримечательностях
-      </p>
+      <h1 class="page-main__title visually-hidden">Напишите нам</h1>
+      <header class="page-main__header main-header">
+        <div class="main-header__background"></div>
+        <h2>Оставьте свой отзыв</h2>
+        <p>
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
+          посещенных вами достопримечательностях
+        </p>
+      </header>
       <section class="feedback-form">
         <h2 class="feedback-form__title visually-hidden">Заполните форму</h2>
         <form

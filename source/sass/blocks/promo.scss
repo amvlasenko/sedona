@@ -1,0 +1,44 @@
+.promo {
+  background-image: url("img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  p {
+    margin: 0;
+  }
+  .promo__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 256px;
+    background-color: $theme-grey;
+    .promo__img {
+      width: 66%;
+      border: 1px solid red;
+    }
+  }
+  .promo__item--brige,
+  .promo__item--motel {
+    background-color: $theme-blue;
+  }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .promo__item--motel {
+      flex-direction: row;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .promo__item--brige {
+      display: flex;
+      flex-direction: row-reverse;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+}

@@ -2,11 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Город Седона</title>
   </head>
   <body class="page-body">
     <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
       <a href="" class="page-header__logo">
         <img
           src="img/logotype-mobile.svg"
@@ -15,38 +26,27 @@
           alt="Город Седона"
         />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Sedona</h1>
-      <h2 class="page-main__header">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </h2>
-      <p class="page-main__dicription">
-        Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-      </p>
+      <h1 class="page-main__title visually-hidden">Город Седона</h1>
+      <header class="page-main__header main-header">
+        <div class="main-header__background"></div>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </header>
       <div class="promo">
-        <div class="true-city">
-          <div class="true-city__discription">
+        <div class="promo__item promo__item--motel">
+          <div class="promo__description">
             <h3>Настоящий городок</h3>
             <br />
             <span>— №1 —</span>
             <br />
             <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="true-city__image">
+          <div class="promo__img">
             <img
               src="https://via.placeholder.com/320x260"
               alt="Мотель в Седоне"
@@ -54,34 +54,28 @@
               height="260"
             />
           </div>
-          <div class="true-city__item true-city__item--housing">
-            <h4 class="true-city__title">Жилье</h4>
-            <p class="true-city__description">
-              Рекомендуем пожить в настоящем мотеле, как в кино!
-            </p>
-          </div>
-          <div class="true-city__item true-city__item--souvenirs">
-            <h4 class="true-city__title">Сувениры</h4>
-            <p class="true-city__description">
-              Не только китайского, но и местного производства!
-            </p>
-          </div>
-          <div class="true-city__item true-city__item--food">
-            <h4 class="true-city__title">Еда</h4>
-            <p class="true-city__description">
-              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-            </p>
-          </div>
         </div>
-        <div class="devils-brige">
-          <div class="devils-brige__discription">
+        <div class="promo__item">
+          <h4>Жилье</h4>
+          <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+        </div>
+        <div class="promo__item">
+          <h4>Сувениры</h4>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="promo__item">
+          <h4>Еда</h4>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="promo__item promo__item--brige">
+          <div class="promo__description">
             <h3>Там есть Мост Дьявола</h3>
             <br />
             <span>— №2 —</span>
             <br />
             <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="devils-brigey__image">
+          <div class="promo__img">
             <img
               src="https://via.placeholder.com/320x260"
               alt="Мост Дьявола"
@@ -90,8 +84,8 @@
             />
           </div>
         </div>
-        <div class="area">
-          <div class="area__discription">
+        <div class="promo__item">
+          <div>
             <h3>Небольшая площадь</h3>
             <br />
             <span>— №3 —</span>
@@ -99,8 +93,8 @@
             <p>Все интересные места находятся очень близко</p>
           </div>
         </div>
-        <div class="road">
-          <div class="road__discription">
+        <div class="promo__item">
+          <div>
             <h3>Красивая дорога</h3>
             <br />
             <span>— №4 —</span>
@@ -108,8 +102,8 @@
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </div>
-        <div class="tourists">
-          <div class="tourists__discription">
+        <div class="promo__item">
+          <div>
             <h3>Мало туристов</h3>
             <br />
             <span>— №5 —</span>
