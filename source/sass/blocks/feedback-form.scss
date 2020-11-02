@@ -1,0 +1,32 @@
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    border: 1px solid coral;
+    .form {
+      display: grid;
+      grid-template:
+      "impression introduce" 1fr
+      "contact contact" 1fr
+      "attractions attractions" 1fr
+      "emotion emotion" 1fr;
+    }
+    .form__impression {
+      order: -2;
+      grid-area: impression;
+    }
+    .form__introduce-yourself {
+      grid-area: introduce;
+      order: -1;
+    }
+    .form__contact-info {
+      grid-area: contact;
+    }
+    .form__attractions{
+      grid-area: attractions;
+    }
+    .form__emotion{
+      grid-area: emotion;
+    }
+  }
+}
+

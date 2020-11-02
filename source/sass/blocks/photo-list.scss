@@ -1,0 +1,7 @@
+.photo-list {
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}

@@ -3,10 +3,11 @@
     display: block;
     height: 389px;
     padding: 30px;
-    background: url("../img/back-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #5d8aba;
+    // background: url("../img/back-mobile.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     &::before {
       display: block;
       box-sizing: content-box;
