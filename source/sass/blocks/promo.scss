@@ -6,25 +6,103 @@
     margin: 0;
   }
   .promo__item {
-    padding: 32px;
+    padding: 32px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 256px;
+    min-height: 167px;
+    h3 {
+      margin: 0;
+      font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    span,
+    p {
+      font-family: "PT Sans Regular", Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
+
+  .promo__item--house,
+  .promo__item--souvenirs,
+  .promo__item--food {
+    padding-left: 70px;
+    padding-right: 10px;
+    text-align: left;
+    font-family: "PT Sans Regular", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    h4 {
+      margin: 26px 0;
+      font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  .promo__item--house {
+    position: relative;
+    svg {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 21px;
+      width: 39px;
+      fill: $theme-blue;
+    }
+  }
+  .promo__item--souvenirs {
+    position: relative;
+    svg {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 21px;
+      width: 39px;
+      fill: $theme-blue;
+    }
+  }
+  .promo__item--food {
+    position: relative;
+    svg {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 21px;
+      width: 39px;
+      fill: $theme-blue;
+    }
+  }
+
   .promo__description {
+    padding: 25px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
     color: white;
     background-color: $theme-blue;
   }
   .promo__img {
-    border: 1px solid red;
   }
   .promo__item--grey {
+    position: relative;
     background-color: $theme-grey;
+    align-items: center;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 280px;
+      content: "";
+      background-color: $theme-deep-grey;
+    }
+    &:last-child::after {
+      display: none;
+    }
   }
   @media (min-width: $tablet-width) {
     display: grid;

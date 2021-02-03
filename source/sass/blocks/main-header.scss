@@ -4,10 +4,6 @@
     height: 389px;
     padding: 30px;
     background-color: #5d8aba;
-    // background: url("../img/back-mobile.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
     &::before {
       display: block;
       box-sizing: content-box;
@@ -21,21 +17,20 @@
   }
   h2 {
     margin: 0;
-    padding: 32px 12px;
+    padding: 32px 32px;
     font-size: 18px;
     line-height: 26px;
+    font-family: 'PT Sans Bold', Arial, sans-serif;
     font-weight: bold;
+    color: black;
   }
-  // &::after {
-  //   position: relative;
-  //   display: block;
-  //   content: '';
-  //   bottom: -19px;
-  //   width: 100%;
-  //   height: 47px;
-  //   background-image: url("../img/bg-triangle.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: contain;
-  // }
+  p {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+  }
 }

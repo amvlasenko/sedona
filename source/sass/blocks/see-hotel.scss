@@ -1,0 +1,32 @@
+.see-hotel {
+  .see-hotel__title {
+    margin-top: 30px;
+    margin-bottom: 27px;
+    font-family: 'PT Sans Bold', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  .see-hotel__description {
+    margin: 0;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  .see-hotel__button {
+    margin-top: 27px;
+    margin-bottom: 50px;
+    padding: 15px 32px;
+    width: 100%;
+    max-width: 280px;
+    font-family: 'PT Sans Bold', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $theme-white;
+    border: none;
+    background-color: $theme-blue;
+  }
+}

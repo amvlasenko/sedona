@@ -1,0 +1,12 @@
+.page-footer {
+  text-align: center;
+  .page-footer__hashtag {
+    margin-top: 28px;
+    font-family: 'PS Sans Bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: $theme-black;
+    text-transform: uppercase;
+  }
+}

@@ -1,14 +1,18 @@
-@import 'variables.scss';
-@import 'blocks/page.scss';
-@import 'blocks/page-body.scss';
-@import 'blocks/page-main.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/main-nav.scss';
-@import 'blocks/main-header.scss';
-@import 'blocks/site-list.scss';
-@import 'blocks/promo.scss';
-@import 'blocks/feedback-form.scss';
-@import 'blocks/photo-list.scss';
+@import "variables.scss";
+@import "fonts.scss";
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/photo-list.scss";
+@import "blocks/see-hotel.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 
 img {
   max-width: 100%;
@@ -27,5 +31,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
