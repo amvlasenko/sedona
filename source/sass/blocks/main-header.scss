@@ -1,18 +1,35 @@
 .main-header {
   .main-header__background {
+    position: relative;
     display: block;
     height: 389px;
-    padding: 30px;
+    padding: 0 20px;
     background-color: #5d8aba;
+    background-image: url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &::before {
       display: block;
-      box-sizing: content-box;
       height: 100%;
       content: "";
       background: url("../img/promo-text.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 57px;
+      content: "";
+      bottom: 0;
+      left: 0;
+      background: url("../img/bg-intro-triangle-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
   h2 {

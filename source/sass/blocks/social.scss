@@ -1,6 +1,27 @@
 .social {
   .social__list {
+    display: flex;
+    justify-content: center;
     padding: 0;
     list-style: none;
+  }
+
+  li {
+    margin-right: 6px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    background-color: $theme-blue;
+    box-sizing: border-box;
+  }
+  svg {
+    width: 50%;
+    height: 50%;
+    fill: $theme-white;
   }
 }

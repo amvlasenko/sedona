@@ -12,9 +12,9 @@ const sync = require("browser-sync").create();
 // Imgmin
 
 const imgmin = () => {
-  gulp.src("testimg/*.jpg")
+  gulp.src("source/img/*.jpg")
         .pipe(webp({quality: 50}))
-        .pipe(gulp.dest("build/img"))
+        .pipe(gulp.dest("source/img"))
 }
 
 exports.imgmin = imgmin;
@@ -25,7 +25,7 @@ const sprite = () => {
   gulp.src("source/gram/*.svg")
         .pipe(svgstore())
         .pipe(rename("icons-sprite.svg"))
-        .pipe(gulp.dest("build/img"))
+        .pipe(gulp.dest("source/img"))
 }
 
 exports.sprite = sprite;

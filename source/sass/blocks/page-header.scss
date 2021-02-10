@@ -1,11 +1,39 @@
 .page-header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  min-height: 56px;
-    .page-header__logo {
+  .page-header__logo {
+    z-index: 1;
+    height: 56px;
+    margin: 0 auto;
+  }
+  .page-header__toggle {
+    border: none;
+    position: absolute;
+    bottom: 17px;
+    right: 20px;
+    width: 23px;
+    height: 22px;
+    background: none;
+    svg {
       position: absolute;
-      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      fill: $theme-blue;
     }
+  }
+}
+@media (min-width: $tablet-width) {
+  .page-header {
+    .page-header__logo {
+      display: none;
+    }
+    .page-header__toggle {
+      display: none;
+    }
+  }
 }

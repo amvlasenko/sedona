@@ -6,16 +6,16 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-header.scss";
-@import "blocks/site-list.scss";
 @import "blocks/promo.scss";
 @import "blocks/feedback-form.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/see-hotel.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
+@import "blocks/entertainments.scss";
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
