@@ -10,9 +10,11 @@
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
+    text-transform: uppercase;
     color: $theme-white;
   }
   .main-nav__list {
+    min-height: 56px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -80,10 +82,6 @@
     .main-nav__toggle {
       display: none;
     }
-    a {
-      font-size: 14px;
-      color: $theme-black;
-    }
     .main-nav__list {
       display: flex;
       flex-wrap: wrap;
@@ -91,8 +89,20 @@
       background-color: $theme-white;
     }
     .main-nav__item {
+      display: flex;
+      align-items: center;
       width: 20%;
       box-shadow: none;
+      a {
+        font-size: 14px;
+        color: $theme-black;
+        &:hover {
+          color: $theme-blue;
+        }
+        &:active {
+          color: rgba($theme-black, 0.3%);
+        }
+      }
       &:first-child {
         box-shadow: none;
       }
@@ -101,6 +111,17 @@
       }
       &:last-child::after {
         background: none;
+      }
+    }
+    .main-nav__item--active {
+      a {
+        color: $menu-active-active;
+        &:hover {
+          color: $menu-active-hover;
+        }
+        &:active {
+          color: rgba($menu-active-active, 0.3);
+        }
       }
     }
     .main-nav__item--logo {
@@ -120,18 +141,22 @@
         background-image: url("../img/logotype-mobile.svg");
         background-repeat: no-repeat;
         background-position: center 0;
-
       }
-      // &::after {
-      //   display: block;
-      //   width: 101px;
-      //   height: 84px;
-      //   content: "";
-      //   background-color: red;
-      // }
     }
   }
   .main-nav--closed {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    .main-nav__item--logo {
+      a {
+        width: 186px;
+        height: 96px;
+        background-image: url("../img/logo-sedona-desktop.svg");
+      }
+    }
   }
 }

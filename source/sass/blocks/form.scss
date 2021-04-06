@@ -1,0 +1,124 @@
+.form {
+  padding: 0 20px;
+  fieldset {
+    margin: 0;
+    border: none;
+  }
+  legend {
+    text-align: center;
+    font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $theme-black;
+    text-transform: uppercase;
+  }
+  label {
+    font-family: "PT Sans Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: $theme-black;
+    text-transform: uppercase;
+  }
+  input {
+    padding: 15px 22px;
+    height: 58px;
+    font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $theme-black;
+    border: none;
+    background-color: $theme-grey;
+    border: 4px solid $theme-grey;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder {
+      color: $theme-black;
+    }
+    &::-moz-placeholder {
+      color: $theme-black;
+    }
+    &:hover {
+      background-color: $form-hover;
+      border: 4px solid $form-hover;
+    }
+    &:focus {
+      background-color: $theme-white;
+      border: 4px solid $form-hover;
+      outline: none;
+    }
+  }
+  &__impression,
+  &__attractions {
+    label {
+      font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      color: $theme-black;
+      text-transform: none;
+    }
+  }
+  .form__submit {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 280px;
+    font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: $theme-white;
+    text-transform: uppercase;
+    background-color: $theme-blue;
+    cursor: pointer;
+  }
+  .form__description {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d d"
+      "e e";
+    grid-template-columns: 1fr 1fr;
+    .form__impression {
+      grid-area: a;
+    }
+    .form__introduce-yourself {
+      grid-area: b;
+    }
+    .form__contact-info {
+      grid-area: c;
+    }
+    .form__attractions {
+      grid-area: d;
+      border-top: 1px solid $theme-border;
+    }
+    .form__emotion {
+      grid-area: e;
+    }
+    .form__description {
+      padding-top: 14px;
+      display: block;
+      text-align: right;
+      font-family: 'PT Sans Regular', Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+      color: $form-checked;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    max-width: 960px;
+  }
+}

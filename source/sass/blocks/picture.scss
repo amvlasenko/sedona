@@ -1,0 +1,113 @@
+.picture {
+  .picture__description {
+    h3 {
+      margin: 0;
+      font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: $theme-black;
+      text-transform: uppercase;
+    }
+    span {
+      font-family: "PT Sans Regular", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      color: $theme-black;
+    }
+  }
+  .picture__likes {
+    font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $theme-black;
+    svg {
+      width: 23px;
+      height: 21px;
+      fill: rgba($theme-black, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .picture {
+    .picture__description {
+      padding-right: 20px;
+      padding-left: 20px;
+      height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -4px;
+      background-color: $description-light;
+      h3 {
+        width: 50%;
+      }
+      span {
+        width: 50%;
+      }
+    }
+    .picture__likes {
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      svg {
+        margin-right: 9px;
+      }
+    }
+  }
+  .picture:nth-child(1) {
+    img {
+      max-height: 400px;
+    }
+  }
+  .picture:nth-child(2n + 1) {
+    .picture__description {
+      background-color: $description-dark;
+    }
+  }
+  .picture:nth-child(1) {
+    .picture__description {
+      background-color: $description-light;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .picture {
+    position: relative;
+    .picture__description {
+      margin: auto;
+      position: absolute;
+      width: 100%;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      background-color: rgba($theme-black, 0.3);
+      box-sizing: border-box;
+      h3, span {
+        color: $theme-white;
+      }
+    }
+    .picture__likes {
+      color: $theme-white;
+      svg {
+        fill: $theme-white;
+      }
+    }
+  }
+  .picture:nth-child(3n) {
+    .picture__description {
+      background-color: rgba($theme-black, 0.3);
+    }
+  }
+  .picture:nth-child(1) {
+    margin-bottom: -4px;
+    .picture__description {
+      background-color: rgba($theme-black, 0.3);
+    }
+  }
+}

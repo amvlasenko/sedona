@@ -1,0 +1,32 @@
+.emotion {
+  .emotion__comment {
+    margin: 0;
+    padding: 15px 22px;
+    width: 100%;
+    height: 160px;
+    font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $theme-black;
+    background-color: $theme-grey;
+    border: 4px solid $theme-grey;
+    box-sizing: border-box;
+    resize: none;
+    &::-webkit-input-placeholder {
+      color: $theme-black;
+    }
+    &::-moz-placeholder {
+      color: $theme-black;
+    }
+    &:hover {
+      background-color: $form-hover;
+      border: 4px solid $form-hover;
+    }
+    &:focus {
+      background-color: $theme-white;
+      border: 4px solid $form-hover;
+      outline: none;
+    }
+  }
+}

@@ -1,7 +1,27 @@
 .photo-list {
   list-style: none;
+  padding: 0 20px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .photo-list {
+    padding: 0 60px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    .photo-list__item:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    .photo-list__item:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 4  ;
+    }
   }
 }

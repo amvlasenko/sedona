@@ -1,7 +1,9 @@
 .entertainments {
+  margin-bottom: 35px;
   .entertainments__item--house,
   .entertainments__item--souvenirs,
   .entertainments__item--food {
+    position: relative;
     display: block;
     padding: 0;
     padding-left: 70px;
@@ -18,38 +20,12 @@
       line-height: 26px;
       text-transform: uppercase;
     }
-  }
-
-  .entertainments__item--house {
-    position: relative;
     svg {
-      display: block;
       position: absolute;
-      top: -40px;
+      width: 40px;
+      height: 40px;
+      top: -13px;
       left: 21px;
-      width: 39px;
-      fill: $theme-blue;
-    }
-  }
-  .entertainments__item--souvenirs {
-    position: relative;
-    svg {
-      display: block;
-      position: absolute;
-      top: -40px;
-      left: 21px;
-      width: 39px;
-      fill: $theme-blue;
-    }
-  }
-  .entertainments__item--food {
-    position: relative;
-    svg {
-      display: block;
-      position: absolute;
-      top: -40px;
-      left: 21px;
-      width: 39px;
       fill: $theme-blue;
     }
   }
@@ -69,9 +45,26 @@
       text-align: center;
       svg {
         position: relative;
+        width: 76px;
+        height: 76px;
         top: auto;
         left: auto;
       }
+    }
+    .entertainments__item {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+    .entertainments__item--house {
+      order: 0;
+    }
+    .entertainments__item--souvenirs {
+      order: 2;
+    }
+    .entertainments__item--food {
+      order: 1;
     }
   }
 }

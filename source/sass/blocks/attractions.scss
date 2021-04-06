@@ -1,0 +1,79 @@
+.attractions {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  legend {
+    margin-bottom: 35px;
+  }
+  .attractions__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 70px;
+  }
+  .attractions__input {
+    padding: 0;
+    //   Hide element
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .attractions__checkbox {
+    margin-left: -70px;
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $description-light;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    border-color: $description-light;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  .attractions__input:hover + .attractions__checkbox {
+    background-color: $form-hover;
+    border-color: $form-hover;
+  }
+  .attractions__input:active + .attractions__checkbox {
+    background-color: $form-active;
+    border-color: $form-active;
+  }
+  .attractions__input:checked + .attractions__checkbox {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+  }
+  .attractions__input:checked:hover + .attractions__checkbox {
+    border-color: $form-hover;
+  }
+  .attractions__input:checked:active + .attractions__checkbox {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z' fill='%23bcbcbc'/%3E%3C/svg%3E%0A");
+    border-color: $form-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions {
+    legend {
+      padding: 0 60px;
+      margin-bottom: 60px;
+    }
+    .attractions__wrapper {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      display: grid;
+      gap: 45px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions {
+    .attractions__wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

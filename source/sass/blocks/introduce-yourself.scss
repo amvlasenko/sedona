@@ -1,0 +1,37 @@
+.introduce-yourself {
+  display: flex;
+  flex-direction: column;
+  legend {
+    margin-bottom: 19px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    input {
+        width: 1em;
+      display: block;
+      flex-grow: 2;
+      margin-left: 14px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce-yourself {
+    padding-left: 58px;
+    position: relative;
+    text-align: left;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      content: '';
+      background-color: $theme-border;
+    }
+  }
+}

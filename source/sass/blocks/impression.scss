@@ -1,0 +1,54 @@
+.impression {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  legend {
+    margin-bottom: 25px;
+  }
+  .impression__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 70px;
+  }
+  .impression__input {
+    padding: 0;
+    //   Hide element
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .impression__radio {
+    margin-left: -70px;
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: $description-light;
+    border-color: $description-light;
+    border-width: 18px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  .impression__input:hover + .impression__radio {
+    background-color: $form-hover;
+    border-color: $form-hover;
+  }
+  .impression__input:active + .impression__radio {
+    background-color: $form-active;
+    border-color: $form-active;
+  }
+  .impression__input:checked + .impression__radio {
+      background-color: $form-checked;
+  }
+  .impression__input:checked:hover + .impression__radio {
+    background-color: $form-checked;
+    border-color: $form-hover;
+  }
+  .impression__input:checked:active + .impression__radio {
+    background-color: rgba($form-checked, 0.3);
+    border-color: $form-active;
+  }
+}

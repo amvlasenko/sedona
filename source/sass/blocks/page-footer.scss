@@ -1,12 +1,43 @@
 .page-footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
   text-align: center;
   .page-footer__hashtag {
-    margin-top: 28px;
     font-family: 'PS Sans Bold', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: $theme-black;
     text-transform: uppercase;
+  }
+  .page-footer__academy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      margin-right: 5%;
+      font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      color: $theme-black;
+      text-transform: uppercase;
+    }
+    a {
+      display: block;
+      width: 30px;
+      height: 35px;
+      background-image: url("../img/htmlacademy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }

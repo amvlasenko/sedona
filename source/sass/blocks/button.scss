@@ -1,0 +1,12 @@
+.button {
+    &:hover {
+        background-color: $button-hover;
+    }
+    &:active {
+        background-color: $button-active;
+        color: rgba($theme-white, 0.3);
+        svg {
+            fill: rgba($theme-white, 0.3);
+        }
+    }
+}
