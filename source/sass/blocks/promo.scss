@@ -23,20 +23,24 @@
       line-height: 21px;
       text-transform: uppercase;
     }
+    span {
+      margin-top: -8px;
+    }
     img {
       display: block;
     }
   }
   .promo__item--brige {
     .promo__description {
-      padding-top: 25px;
+      padding-top: 42px;
+      padding-bottom: 34px;
     }
   }
-  
+
   .promo__description {
-    padding-top: 65px;
+    padding-top: 36px;
     padding-right: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 38px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -44,7 +48,7 @@
     color: $theme-white;
     background-color: $theme-blue;
   }
-  
+
   .promo__item--grey {
     display: flex;
     align-items: center;
@@ -52,6 +56,12 @@
     position: relative;
     background-color: $theme-grey;
     text-align: center;
+    h3 {
+      margin-top: 3px;
+    }
+    span {
+      display: block;
+    }
     &::before {
       margin: 0 auto;
       position: absolute;
@@ -69,7 +79,7 @@
   }
   &::before {
     display: block;
-    padding-top: 5%;
+    padding-top: 2%;
     width: 100%;
     height: 40px;
     content: "";
@@ -84,6 +94,12 @@
   .promo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    .promo__item {
+      height: 256px;
+      img {
+        height: 256px;
+      }
+    }
     .promo__item--grey {
       &::before {
         display: none;
@@ -124,9 +140,9 @@
     .promo__item--entertainments {
       grid-column-start: 1;
       grid-column-end: 4;
-      }
-      &::before {
-        display: none;
-      }
+    }
+    &::before {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,7 @@
 body {
-    background-color: $theme-white;
-    // filter: drop-shadow();
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $theme-white;
+  // filter: drop-shadow();
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }

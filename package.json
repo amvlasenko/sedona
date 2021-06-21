@@ -26,7 +26,9 @@
     "build": "gulp styles",
     "start": "gulp",
     "imgmin": "gulp imgmin",
-    "sprite": "gulp sprite"
+    "sprite": "gulp sprite",
+    "copy": "gulp copy",
+    "clean": "gulp clean"
   },
   "browserslist": [
     "last 2 versions",
@@ -43,5 +45,8 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "del": "^6.0.0"
   }
 }

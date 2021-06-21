@@ -1,19 +1,22 @@
 .entertainments {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
+  .entertainments__item {
+  margin-bottom: -11px;
+  }
   .entertainments__item--house,
   .entertainments__item--souvenirs,
   .entertainments__item--food {
     position: relative;
     display: block;
-    padding: 0;
-    padding-left: 70px;
     padding-right: 10px;
+    padding-top: 36px;
+    padding-left: 70px;
     text-align: left;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     h4 {
-      margin: 26px 0;
+      margin: 0;
       font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
       font-weight: bold;
       font-size: 18px;
@@ -24,17 +27,20 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      top: -13px;
+      top: 24px;
       left: 21px;
       fill: $theme-blue;
+    }
+    p {
+      margin-top: 16px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .entertainments {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     .entertainments__item--house,
     .entertainments__item--souvenirs,
     .entertainments__item--food {
