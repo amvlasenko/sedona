@@ -1,4 +1,4 @@
-## Ссылка на деплой: https://amvlasenko.github.io/sedona/
+## Ссылка на GitHub Pages: https://amvlasenko.github.io/sedona/
 # Седона
 
 **Зачем:**
