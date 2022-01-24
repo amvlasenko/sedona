@@ -1,11 +1,13 @@
 {
   "name": "sedona",
+  "homepage": "https://amvlasenko.github.io/sedona/",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.13",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-less": "4.0.1",
     "gulp-plumber": "1.2.1",
@@ -28,7 +30,9 @@
     "imgmin": "gulp imgmin",
     "sprite": "gulp sprite",
     "copy": "gulp copy",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
